@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F343B2C2C0C81BC0034768A /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F343B2B2C0C81BC0034768A /* MotionManager.swift */; };
+		8F343B382C0C97460034768A /* MontserratAlt1-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F343B372C0C97460034768A /* MontserratAlt1-Medium.ttf */; };
+		8F343B392C0C97460034768A /* MontserratAlt1-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F343B372C0C97460034768A /* MontserratAlt1-Medium.ttf */; };
+		8FC1BBA62C0BA31E007769DE /* CocoaLumberjack in Frameworks */ = {isa = PBXBuildFile; productRef = 8FC1BBA52C0BA31E007769DE /* CocoaLumberjack */; };
+		8FC1BBA82C0BA31E007769DE /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8FC1BBA72C0BA31E007769DE /* CocoaLumberjackSwift */; };
+		8FC1BBAA2C0BA31E007769DE /* CocoaLumberjackSwiftLogBackend in Frameworks */ = {isa = PBXBuildFile; productRef = 8FC1BBA92C0BA31E007769DE /* CocoaLumberjackSwiftLogBackend */; };
+		8FC1BBAE2C0BA5D1007769DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FC1BBAD2C0BA5D1007769DE /* GoogleService-Info.plist */; };
+		8FCD05C72C190A0400434312 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD437882C0B8F580078F343 /* ContentView.swift */; };
+		8FD437762C0B8F050078F343 /* DikaVPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD437752C0B8F050078F343 /* DikaVPNApp.swift */; };
+		8FD4377A2C0B8F060078F343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FD437792C0B8F060078F343 /* Assets.xcassets */; };
+		8FD4377D2C0B8F060078F343 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FD4377C2C0B8F060078F343 /* Preview Assets.xcassets */; };
+		8FD437872C0B8F4F0078F343 /* VPNConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD437852C0B8F4F0078F343 /* VPNConfiguration.swift */; };
+		8FD4378F2C0B8F580078F343 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD437892C0B8F580078F343 /* DetailView.swift */; };
+		8FD437902C0B8F580078F343 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4378A2C0B8F580078F343 /* MainView.swift */; };
+		8FD437912C0B8F580078F343 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4378B2C0B8F580078F343 /* SecondView.swift */; };
+		8FD437922C0B8F580078F343 /* Sign In.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4378C2C0B8F580078F343 /* Sign In.swift */; };
+		8FD437962C0B8F680078F343 /* ViewModelSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD437932C0B8F680078F343 /* ViewModelSecond.swift */; };
+		8FD437972C0B8F680078F343 /* VPNViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD437942C0B8F680078F343 /* VPNViewModel.swift */; };
+		8FD437A32C0B8F700078F343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FD4379B2C0B8F700078F343 /* Assets.xcassets */; };
+		8FD437A42C0B8F700078F343 /* endPlanet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FD4379C2C0B8F700078F343 /* endPlanet.jpg */; };
+		8FD437A62C0B8F700078F343 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FD4379E2C0B8F700078F343 /* Preview Assets.xcassets */; };
+		8FD437A72C0B8F700078F343 /* startPlanet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FD4379F2C0B8F700078F343 /* startPlanet.jpg */; };
+		8FD437D02C0B903E0078F343 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8FD437CF2C0B903E0078F343 /* FirebaseAnalytics */; };
+		8FD437D22C0B903E0078F343 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 8FD437D12C0B903E0078F343 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		8FD437D42C0B903E0078F343 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8FD437D32C0B903E0078F343 /* FirebaseAuth */; };
+		8FD437D62C0B903E0078F343 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8FD437D52C0B903E0078F343 /* FirebaseFirestore */; };
+		8FD437D92C0B904F0078F343 /* CocoaLumberjack in Frameworks */ = {isa = PBXBuildFile; productRef = 8FD437D82C0B904F0078F343 /* CocoaLumberjack */; };
+		8FD437DB2C0B904F0078F343 /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8FD437DA2C0B904F0078F343 /* CocoaLumberjackSwift */; };
+		8FD437DD2C0B904F0078F343 /* CocoaLumberjackSwiftLogBackend in Frameworks */ = {isa = PBXBuildFile; productRef = 8FD437DC2C0B904F0078F343 /* CocoaLumberjackSwiftLogBackend */; };
+		8FD437DF2C0B907C0078F343 /* Tun2socks 2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD437DE2C0B907C0078F343 /* Tun2socks 2.xcframework */; };
+		8FD437E42C0B93DE0078F343 /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD437E22C0B93DE0078F343 /* VPNManager.swift */; };
+		8FD437E52C0B93DE0078F343 /* ErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD437E32C0B93DE0078F343 /* ErrorCode.swift */; };
+		8FD437EB2C0B957A0078F343 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD437BF2C0B8FE20078F343 /* NetworkExtension.framework */; };
+		8FD437EF2C0B957A0078F343 /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD437EE2C0B957A0078F343 /* PacketTunnelProvider.m */; };
+		8FD437F42C0B957A0078F343 /* OutlineVPN.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8FD437EA2C0B957A0078F343 /* OutlineVPN.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FD437FA2C0B95CD0078F343 /* OutlineTunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD437F92C0B95CD0078F343 /* OutlineTunnel.swift */; };
+		8FD437FC2C0B961D0078F343 /* OutlineTunnelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD437FB2C0B961D0078F343 /* OutlineTunnelStore.swift */; };
+		8FD437FE2C0B96330078F343 /* NSNotification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD437FD2C0B96330078F343 /* NSNotification+Extension.swift */; };
+		8FD438002C0B964B0078F343 /* Subnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD437FF2C0B964B0078F343 /* Subnet.swift */; };
+		8FD438012C0B99420078F343 /* Tun2socks 2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD437DE2C0B907C0078F343 /* Tun2socks 2.xcframework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FD437F22C0B957A0078F343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FD4376A2C0B8F050078F343 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FD437E92C0B957A0078F343;
+			remoteInfo = OutlineVPN;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8FD437CD2C0B8FE20078F343 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8FD437F42C0B957A0078F343 /* OutlineVPN.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8F343B2B2C0C81BC0034768A /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		8F343B372C0C97460034768A /* MontserratAlt1-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontserratAlt1-Medium.ttf"; path = "DikaVPN/Resource/MontserratAlt1-Medium.ttf"; sourceTree = SOURCE_ROOT; };
+		8FC1BBAD2C0BA5D1007769DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8FC1BBAF2C0BA715007769DE /* OutlineVPN-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OutlineVPN-Bridging-Header.h"; sourceTree = "<group>"; };
+		8FD437722C0B8F050078F343 /* DikaVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DikaVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD437752C0B8F050078F343 /* DikaVPNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DikaVPNApp.swift; sourceTree = "<group>"; };
+		8FD437792C0B8F060078F343 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FD4377C2C0B8F060078F343 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8FD437852C0B8F4F0078F343 /* VPNConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPNConfiguration.swift; sourceTree = "<group>"; };
+		8FD437882C0B8F580078F343 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8FD437892C0B8F580078F343 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		8FD4378A2C0B8F580078F343 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8FD4378B2C0B8F580078F343 /* SecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		8FD4378C2C0B8F580078F343 /* Sign In.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sign In.swift"; sourceTree = "<group>"; };
+		8FD437932C0B8F680078F343 /* ViewModelSecond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelSecond.swift; sourceTree = "<group>"; };
+		8FD437942C0B8F680078F343 /* VPNViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPNViewModel.swift; sourceTree = "<group>"; };
+		8FD4379B2C0B8F700078F343 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FD4379C2C0B8F700078F343 /* endPlanet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = endPlanet.jpg; sourceTree = "<group>"; };
+		8FD4379E2C0B8F700078F343 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8FD4379F2C0B8F700078F343 /* startPlanet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = startPlanet.jpg; sourceTree = "<group>"; };
+		8FD437BF2C0B8FE20078F343 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		8FD437DE2C0B907C0078F343 /* Tun2socks 2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "Tun2socks 2.xcframework"; sourceTree = "<group>"; };
+		8FD437E12C0B909F0078F343 /* DikaVPN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DikaVPN.entitlements; sourceTree = "<group>"; };
+		8FD437E22C0B93DE0078F343 /* VPNManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPNManager.swift; sourceTree = "<group>"; };
+		8FD437E32C0B93DE0078F343 /* ErrorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCode.swift; sourceTree = "<group>"; };
+		8FD437EA2C0B957A0078F343 /* OutlineVPN.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OutlineVPN.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD437ED2C0B957A0078F343 /* PacketTunnelProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacketTunnelProvider.h; sourceTree = "<group>"; };
+		8FD437EE2C0B957A0078F343 /* PacketTunnelProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacketTunnelProvider.m; sourceTree = "<group>"; };
+		8FD437F02C0B957A0078F343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FD437F12C0B957A0078F343 /* OutlineVPN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OutlineVPN.entitlements; sourceTree = "<group>"; };
+		8FD437F92C0B95CD0078F343 /* OutlineTunnel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineTunnel.swift; sourceTree = "<group>"; };
+		8FD437FB2C0B961D0078F343 /* OutlineTunnelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineTunnelStore.swift; sourceTree = "<group>"; };
+		8FD437FD2C0B96330078F343 /* NSNotification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+Extension.swift"; sourceTree = "<group>"; };
+		8FD437FF2C0B964B0078F343 /* Subnet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subnet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FD4376F2C0B8F050078F343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD437D02C0B903E0078F343 /* FirebaseAnalytics in Frameworks */,
+				8FD437D62C0B903E0078F343 /* FirebaseFirestore in Frameworks */,
+				8FD437DB2C0B904F0078F343 /* CocoaLumberjackSwift in Frameworks */,
+				8FD437DD2C0B904F0078F343 /* CocoaLumberjackSwiftLogBackend in Frameworks */,
+				8FD437DF2C0B907C0078F343 /* Tun2socks 2.xcframework in Frameworks */,
+				8FD437D42C0B903E0078F343 /* FirebaseAuth in Frameworks */,
+				8FD437D92C0B904F0078F343 /* CocoaLumberjack in Frameworks */,
+				8FD437D22C0B903E0078F343 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD437E72C0B957A0078F343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC1BBA62C0BA31E007769DE /* CocoaLumberjack in Frameworks */,
+				8FD438012C0B99420078F343 /* Tun2socks 2.xcframework in Frameworks */,
+				8FC1BBA82C0BA31E007769DE /* CocoaLumberjackSwift in Frameworks */,
+				8FC1BBAA2C0BA31E007769DE /* CocoaLumberjackSwiftLogBackend in Frameworks */,
+				8FD437EB2C0B957A0078F343 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FD437692C0B8F050078F343 = {
+			isa = PBXGroup;
+			children = (
+				8FD437DE2C0B907C0078F343 /* Tun2socks 2.xcframework */,
+				8FD437742C0B8F050078F343 /* DikaVPN */,
+				8FD437EC2C0B957A0078F343 /* OutlineVPN */,
+				8FD437BE2C0B8FE20078F343 /* Frameworks */,
+				8FD437732C0B8F050078F343 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FD437732C0B8F050078F343 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FD437722C0B8F050078F343 /* DikaVPN.app */,
+				8FD437EA2C0B957A0078F343 /* OutlineVPN.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FD437742C0B8F050078F343 /* DikaVPN */ = {
+			isa = PBXGroup;
+			children = (
+				8FD437E12C0B909F0078F343 /* DikaVPN.entitlements */,
+				8FD437752C0B8F050078F343 /* DikaVPNApp.swift */,
+				8FD437792C0B8F060078F343 /* Assets.xcassets */,
+				8FD437862C0B8F4F0078F343 /* Model */,
+				8FD4378D2C0B8F580078F343 /* View */,
+				8FD437952C0B8F680078F343 /* ViewModel */,
+				8FD437A02C0B8F700078F343 /* Resource */,
+				8FD4377B2C0B8F060078F343 /* Preview Content */,
+			);
+			path = DikaVPN;
+			sourceTree = "<group>";
+		};
+		8FD4377B2C0B8F060078F343 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8FD4377C2C0B8F060078F343 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8FD437862C0B8F4F0078F343 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FD437852C0B8F4F0078F343 /* VPNConfiguration.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8FD4378D2C0B8F580078F343 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8FD437882C0B8F580078F343 /* ContentView.swift */,
+				8FD437892C0B8F580078F343 /* DetailView.swift */,
+				8FD4378A2C0B8F580078F343 /* MainView.swift */,
+				8FD4378B2C0B8F580078F343 /* SecondView.swift */,
+				8FD4378C2C0B8F580078F343 /* Sign In.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8FD437952C0B8F680078F343 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8FD437932C0B8F680078F343 /* ViewModelSecond.swift */,
+				8FD437942C0B8F680078F343 /* VPNViewModel.swift */,
+				8FD437E32C0B93DE0078F343 /* ErrorCode.swift */,
+				8FD437E22C0B93DE0078F343 /* VPNManager.swift */,
+				8F343B2B2C0C81BC0034768A /* MotionManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8FD4379A2C0B8F700078F343 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FC1BBAD2C0BA5D1007769DE /* GoogleService-Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8FD437A02C0B8F700078F343 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8F343B372C0C97460034768A /* MontserratAlt1-Medium.ttf */,
+				8FD4379A2C0B8F700078F343 /* Supporting Files */,
+				8FD4379B2C0B8F700078F343 /* Assets.xcassets */,
+				8FD4379C2C0B8F700078F343 /* endPlanet.jpg */,
+				8FD4379E2C0B8F700078F343 /* Preview Assets.xcassets */,
+				8FD4379F2C0B8F700078F343 /* startPlanet.jpg */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8FD437BE2C0B8FE20078F343 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FD437BF2C0B8FE20078F343 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FD437EC2C0B957A0078F343 /* OutlineVPN */ = {
+			isa = PBXGroup;
+			children = (
+				8FD437F02C0B957A0078F343 /* Info.plist */,
+				8FC1BBAF2C0BA715007769DE /* OutlineVPN-Bridging-Header.h */,
+				8FD437ED2C0B957A0078F343 /* PacketTunnelProvider.h */,
+				8FD437EE2C0B957A0078F343 /* PacketTunnelProvider.m */,
+				8FD437F12C0B957A0078F343 /* OutlineVPN.entitlements */,
+				8FD437F92C0B95CD0078F343 /* OutlineTunnel.swift */,
+				8FD437FB2C0B961D0078F343 /* OutlineTunnelStore.swift */,
+				8FD437FD2C0B96330078F343 /* NSNotification+Extension.swift */,
+				8FD437FF2C0B964B0078F343 /* Subnet.swift */,
+			);
+			path = OutlineVPN;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FD437712C0B8F050078F343 /* DikaVPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FD437802C0B8F060078F343 /* Build configuration list for PBXNativeTarget "DikaVPN" */;
+			buildPhases = (
+				8FD4376E2C0B8F050078F343 /* Sources */,
+				8FD4376F2C0B8F050078F343 /* Frameworks */,
+				8FD437702C0B8F050078F343 /* Resources */,
+				8FD437CD2C0B8FE20078F343 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FD437F32C0B957A0078F343 /* PBXTargetDependency */,
+			);
+			name = DikaVPN;
+			packageProductDependencies = (
+				8FD437CF2C0B903E0078F343 /* FirebaseAnalytics */,
+				8FD437D12C0B903E0078F343 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				8FD437D32C0B903E0078F343 /* FirebaseAuth */,
+				8FD437D52C0B903E0078F343 /* FirebaseFirestore */,
+				8FD437D82C0B904F0078F343 /* CocoaLumberjack */,
+				8FD437DA2C0B904F0078F343 /* CocoaLumberjackSwift */,
+				8FD437DC2C0B904F0078F343 /* CocoaLumberjackSwiftLogBackend */,
+			);
+			productName = DikaVPN;
+			productReference = 8FD437722C0B8F050078F343 /* DikaVPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FD437E92C0B957A0078F343 /* OutlineVPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FD437F52C0B957A0078F343 /* Build configuration list for PBXNativeTarget "OutlineVPN" */;
+			buildPhases = (
+				8FD437E62C0B957A0078F343 /* Sources */,
+				8FD437E72C0B957A0078F343 /* Frameworks */,
+				8FD437E82C0B957A0078F343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OutlineVPN;
+			packageProductDependencies = (
+				8FC1BBA52C0BA31E007769DE /* CocoaLumberjack */,
+				8FC1BBA72C0BA31E007769DE /* CocoaLumberjackSwift */,
+				8FC1BBA92C0BA31E007769DE /* CocoaLumberjackSwiftLogBackend */,
+			);
+			productName = OutlineVPN;
+			productReference = 8FD437EA2C0B957A0078F343 /* OutlineVPN.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FD4376A2C0B8F050078F343 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					8FD437712C0B8F050078F343 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					8FD437E92C0B957A0078F343 = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+				};
+			};
+			buildConfigurationList = 8FD4376D2C0B8F050078F343 /* Build configuration list for PBXProject "DikaVPN" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FD437692C0B8F050078F343;
+			packageReferences = (
+				8FD437CE2C0B903E0078F343 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8FD437D72C0B904F0078F343 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
+			);
+			productRefGroup = 8FD437732C0B8F050078F343 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FD437712C0B8F050078F343 /* DikaVPN */,
+				8FD437E92C0B957A0078F343 /* OutlineVPN */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FD437702C0B8F050078F343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD437A72C0B8F700078F343 /* startPlanet.jpg in Resources */,
+				8FC1BBAE2C0BA5D1007769DE /* GoogleService-Info.plist in Resources */,
+				8FD437A62C0B8F700078F343 /* Preview Assets.xcassets in Resources */,
+				8FD4377D2C0B8F060078F343 /* Preview Assets.xcassets in Resources */,
+				8F343B382C0C97460034768A /* MontserratAlt1-Medium.ttf in Resources */,
+				8FD4377A2C0B8F060078F343 /* Assets.xcassets in Resources */,
+				8FD437A32C0B8F700078F343 /* Assets.xcassets in Resources */,
+				8FD437A42C0B8F700078F343 /* endPlanet.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD437E82C0B957A0078F343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F343B392C0C97460034768A /* MontserratAlt1-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FD4376E2C0B8F050078F343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD437922C0B8F580078F343 /* Sign In.swift in Sources */,
+				8FD437972C0B8F680078F343 /* VPNViewModel.swift in Sources */,
+				8FCD05C72C190A0400434312 /* ContentView.swift in Sources */,
+				8FD437962C0B8F680078F343 /* ViewModelSecond.swift in Sources */,
+				8FD437912C0B8F580078F343 /* SecondView.swift in Sources */,
+				8FD437E42C0B93DE0078F343 /* VPNManager.swift in Sources */,
+				8FD437902C0B8F580078F343 /* MainView.swift in Sources */,
+				8F343B2C2C0C81BC0034768A /* MotionManager.swift in Sources */,
+				8FD437762C0B8F050078F343 /* DikaVPNApp.swift in Sources */,
+				8FD4378F2C0B8F580078F343 /* DetailView.swift in Sources */,
+				8FD437872C0B8F4F0078F343 /* VPNConfiguration.swift in Sources */,
+				8FD437E52C0B93DE0078F343 /* ErrorCode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD437E62C0B957A0078F343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD437FA2C0B95CD0078F343 /* OutlineTunnel.swift in Sources */,
+				8FD437FE2C0B96330078F343 /* NSNotification+Extension.swift in Sources */,
+				8FD438002C0B964B0078F343 /* Subnet.swift in Sources */,
+				8FD437EF2C0B957A0078F343 /* PacketTunnelProvider.m in Sources */,
+				8FD437FC2C0B961D0078F343 /* OutlineTunnelStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FD437F32C0B957A0078F343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FD437E92C0B957A0078F343 /* OutlineVPN */;
+			targetProxy = 8FD437F22C0B957A0078F343 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8FD4377E2C0B8F060078F343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FD4377F2C0B8F060078F343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FD437812C0B8F060078F343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DikaVPN/DikaVPN.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DikaVPN/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Y4SDXRXUW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Tapg1er.DikaVPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FD437822C0B8F060078F343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DikaVPN/DikaVPN.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DikaVPN/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Y4SDXRXUW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Tapg1er.DikaVPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8FD437F62C0B957A0078F343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = OutlineVPN/OutlineVPN.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Y4SDXRXUW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OutlineVPN/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OutlineVPN;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Tapg1er.DikaVPN.OutlineVPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FD437F72C0B957A0078F343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = OutlineVPN/OutlineVPN.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Y4SDXRXUW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OutlineVPN/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OutlineVPN;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Tapg1er.DikaVPN.OutlineVPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FD4376D2C0B8F050078F343 /* Build configuration list for PBXProject "DikaVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FD4377E2C0B8F060078F343 /* Debug */,
+				8FD4377F2C0B8F060078F343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FD437802C0B8F060078F343 /* Build configuration list for PBXNativeTarget "DikaVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FD437812C0B8F060078F343 /* Debug */,
+				8FD437822C0B8F060078F343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FD437F52C0B957A0078F343 /* Build configuration list for PBXNativeTarget "OutlineVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FD437F62C0B957A0078F343 /* Debug */,
+				8FD437F72C0B957A0078F343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8FD437CE2C0B903E0078F343 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.27.0;
+			};
+		};
+		8FD437D72C0B904F0078F343 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CocoaLumberjack/CocoaLumberjack.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.8.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8FC1BBA52C0BA31E007769DE /* CocoaLumberjack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FD437D72C0B904F0078F343 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjack;
+		};
+		8FC1BBA72C0BA31E007769DE /* CocoaLumberjackSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FD437D72C0B904F0078F343 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjackSwift;
+		};
+		8FC1BBA92C0BA31E007769DE /* CocoaLumberjackSwiftLogBackend */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FD437D72C0B904F0078F343 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjackSwiftLogBackend;
+		};
+		8FD437CF2C0B903E0078F343 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FD437CE2C0B903E0078F343 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		8FD437D12C0B903E0078F343 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FD437CE2C0B903E0078F343 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		8FD437D32C0B903E0078F343 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FD437CE2C0B903E0078F343 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8FD437D52C0B903E0078F343 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FD437CE2C0B903E0078F343 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		8FD437D82C0B904F0078F343 /* CocoaLumberjack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FD437D72C0B904F0078F343 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjack;
+		};
+		8FD437DA2C0B904F0078F343 /* CocoaLumberjackSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FD437D72C0B904F0078F343 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjackSwift;
+		};
+		8FD437DC2C0B904F0078F343 /* CocoaLumberjackSwiftLogBackend */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FD437D72C0B904F0078F343 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjackSwiftLogBackend;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8FD4376A2C0B8F050078F343 /* Project object */;
+}

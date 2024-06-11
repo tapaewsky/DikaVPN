@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBMyrLjdm0lHb5XFXkJ4-usHgZdptBXg18</string>
+	<key>GCM_SENDER_ID</key>
+	<string>19922081897</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Tapg1er.DikaVPN</string>
+	<key>PROJECT_ID</key>
+	<string>dikavpn-5aa3f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dikavpn-5aa3f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:19922081897:ios:74a5459a930788f7a8aaf8</string>
+</dict>
+</plist>
