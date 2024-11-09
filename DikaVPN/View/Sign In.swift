@@ -9,15 +9,14 @@ struct SignIn: View {
     @State private var animate = false
 
     var body: some View {
-        ZStack {
+        VStack {
             GeometryReader { geometry in
-                Image("endPlanet")
+                Image("endPlanetBang")
                     .resizable()
-                    .scaledToFill()
-                    .frame(width: geometry.size.width, height: geometry.size.height )
-                    .ignoresSafeArea()
-                    .opacity(0.8)
-                    .offset(x: CGFloat(motionManager.x * 10))
+                    .scaledToFill()  // Заполняет весь экран, обрезая края если нужно
+                    .frame(width: geometry.size.width/*, height: geometry.size.height*/)
+                    .ignoresSafeArea()  // Игнорируем безопасные зоны
+                    .transition(.opacity)
             }
 
             VStack {

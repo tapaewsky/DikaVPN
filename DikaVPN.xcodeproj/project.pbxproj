@@ -26,9 +26,7 @@
 		8FD437962C0B8F680078F343 /* ViewModelSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD437932C0B8F680078F343 /* ViewModelSecond.swift */; };
 		8FD437972C0B8F680078F343 /* VPNViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD437942C0B8F680078F343 /* VPNViewModel.swift */; };
 		8FD437A32C0B8F700078F343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FD4379B2C0B8F700078F343 /* Assets.xcassets */; };
-		8FD437A42C0B8F700078F343 /* endPlanet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FD4379C2C0B8F700078F343 /* endPlanet.jpg */; };
 		8FD437A62C0B8F700078F343 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FD4379E2C0B8F700078F343 /* Preview Assets.xcassets */; };
-		8FD437A72C0B8F700078F343 /* startPlanet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FD4379F2C0B8F700078F343 /* startPlanet.jpg */; };
 		8FD437D02C0B903E0078F343 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8FD437CF2C0B903E0078F343 /* FirebaseAnalytics */; };
 		8FD437D22C0B903E0078F343 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 8FD437D12C0B903E0078F343 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		8FD437D42C0B903E0078F343 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8FD437D32C0B903E0078F343 /* FirebaseAuth */; };
@@ -91,9 +89,7 @@
 		8FD437932C0B8F680078F343 /* ViewModelSecond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelSecond.swift; sourceTree = "<group>"; };
 		8FD437942C0B8F680078F343 /* VPNViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPNViewModel.swift; sourceTree = "<group>"; };
 		8FD4379B2C0B8F700078F343 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8FD4379C2C0B8F700078F343 /* endPlanet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = endPlanet.jpg; sourceTree = "<group>"; };
 		8FD4379E2C0B8F700078F343 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8FD4379F2C0B8F700078F343 /* startPlanet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = startPlanet.jpg; sourceTree = "<group>"; };
 		8FD437BF2C0B8FE20078F343 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		8FD437DE2C0B907C0078F343 /* Tun2socks 2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "Tun2socks 2.xcframework"; sourceTree = "<group>"; };
 		8FD437E12C0B909F0078F343 /* DikaVPN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DikaVPN.entitlements; sourceTree = "<group>"; };
@@ -230,9 +226,7 @@
 				8F343B372C0C97460034768A /* MontserratAlt1-Medium.ttf */,
 				8FD4379A2C0B8F700078F343 /* Supporting Files */,
 				8FD4379B2C0B8F700078F343 /* Assets.xcassets */,
-				8FD4379C2C0B8F700078F343 /* endPlanet.jpg */,
 				8FD4379E2C0B8F700078F343 /* Preview Assets.xcassets */,
-				8FD4379F2C0B8F700078F343 /* startPlanet.jpg */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -361,14 +355,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FD437A72C0B8F700078F343 /* startPlanet.jpg in Resources */,
 				8FC1BBAE2C0BA5D1007769DE /* GoogleService-Info.plist in Resources */,
 				8FD437A62C0B8F700078F343 /* Preview Assets.xcassets in Resources */,
 				8FD4377D2C0B8F060078F343 /* Preview Assets.xcassets in Resources */,
 				8F343B382C0C97460034768A /* MontserratAlt1-Medium.ttf in Resources */,
 				8FD4377A2C0B8F060078F343 /* Assets.xcassets in Resources */,
 				8FD437A32C0B8F700078F343 /* Assets.xcassets in Resources */,
-				8FD437A42C0B8F700078F343 /* endPlanet.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +554,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -570,6 +562,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Tapg1er.DikaVPN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -594,7 +589,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,6 +597,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Tapg1er.DikaVPN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

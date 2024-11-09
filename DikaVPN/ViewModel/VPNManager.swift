@@ -20,10 +20,10 @@ protocol OutlineManagerProtocol {
 enum Constants {
     static let outlineConfig: [String: NSObject]? = {
         return [
-            "password": "paste your configs" as NSObject,
-            "host": "paste your configs" as NSObject,
-            "port": "paste your configs" as NSNumber,
-            "method": "paste your configs" as NSObject,
+            "password": "TFDoXlPCA6BVjyN6uIIXej" as NSObject,
+            "host": "194.164.35.150" as NSObject,
+            "port":  27288 as NSNumber,
+            "method": "chacha20-ietf-poly1305" as NSObject,
         ]
     }()
 
